@@ -1,5 +1,5 @@
 build:
   id: 123
   version: 1.2.3
-  name: "Git-Development-Build"
+  name: "Git-Development-Build-Refresh"
   type: "Git-Development Build"
