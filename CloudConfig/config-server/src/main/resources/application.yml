@@ -1,0 +1,31 @@
+server:
+  port: 8888
+
+management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
+spring:
+  application:
+    name: config-server
+  profiles:
+    active:
+    - native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+        # git:
+        #   uri: https://github.com/bkiranid4u/cloud-config
+        #   default-label: develop # this is the default branch in git hub
+  
+      
+          
+        
